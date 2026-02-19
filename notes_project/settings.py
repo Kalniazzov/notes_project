@@ -120,16 +120,16 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.AllowAny', # Разрешить доступ всем
     ],
     'DEFAULT_THROTTLE_CLASSES': [
-        'rest_framwork.thhrottling.AnnonRateThrottle', # Ограничение запросов для анонимных пользвателей
+        'rest_framework.throttling.AnonRateThrottle', # Ограничение запросов для анонимных пользвателей
     ],
     'DEFAULT_THROTTLE_RATES': {
         'anon': '100/hour', # Лимит запросов для анонимных пользвателей
     },
     'DEFAULT_RENDERER_CLASSES': [
-        'rest_framwork.renderers.JSONRenderer', # Редеринг в JSON
+        'rest_framework.renderers.JSONRenderer', # Редеринг в JSON
     ],
     'DEFAULT_PARSER_CLASSES': [
-        'rest_framwork.parsers.JSONParser', # Парсинг JSON-данных
+        'rest_framework.parsers.JSONParser', # Парсинг JSON-данных
     ],
 }
 
